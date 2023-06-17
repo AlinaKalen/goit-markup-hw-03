@@ -203,7 +203,6 @@ top: 24px;
     flex: none;
     order: 0;
     flex-grow: 0;
-
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     letter-spacing: 0.04em;
@@ -211,6 +210,7 @@ top: 24px;
     line-height: 1.5;
     display: flex;
     align-items: center;
+    padding: 32 16 32 16;
 }
 
 
@@ -349,6 +349,7 @@ top: 24px;
     margin-top: 120px;
     padding-top: 0px;
     
+    
 }
 
 .team-header {
@@ -362,7 +363,8 @@ top: 24px;
     position: absolute;
     height: 40px;
     left: 639px;
-   
+    padding-top: 120px;
+    padding-bottom: 72px;
    
 }
 
@@ -381,6 +383,7 @@ top: 24px;
     width: 264px;
     height: 380px;
     margin-top: 216px;
+    
 }
 
 .team-card-mark {
@@ -426,11 +429,17 @@ top: 24px;
     flex: none;
     order: 1;
     flex-grow: 0;
+    
 }
 
 .footer-section {
     background-color: var(--navy-blue-modal-overlay);
-
+    position: absolute;
+    width: 1440px;
+    height: 312px;
+    left: 0px;
+    top: 2280px;
+    margin-top: 120px;
 }
 
 .footer-text {
@@ -438,6 +447,14 @@ top: 24px;
     line-height: 1.5;
 }
 
+.footer-section-text {
+    position: absolute;
+    width: 264px;
+    height: 112px;
+    left: 156px;
+    margin-top: 100px;  
+    margin-bottom: 100px; 
+}
 
 /* Portfolio*/
 
