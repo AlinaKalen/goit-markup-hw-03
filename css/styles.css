@@ -521,21 +521,21 @@ top: 24px;
     top: 168px;
 }
 
-.row-one {
-    position: absolute;
-    width: 1128px;
-    top: 288px;
-    justify-content: space-evenly;
-   
-    
-}
 .project-card {
     border: 1px solid var(--accent-cornflower);
     box-sizing: border-box;
     position: absolute;
-    width: 360px;
+    width: calc((100% - 48px) / 3);
     height: 420px;
+
     
+}
+
+
+.row-one {
+    position: absolute;
+    width: 1128px;
+    top: 288px;
 }
 
 .project-card-one {
@@ -633,4 +633,11 @@ top: 24px;
 
 .main-contact {
     font-style: normal;
+}
+
+.project-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
 }
