@@ -461,6 +461,15 @@ top: 24px;
 
 /* Portfolio*/
 
+.top-line {
+    border-bottom: 1px solid var(--accent-cornflower);
+    box-sizing: border-box;
+    position: absolute;
+    width: 1440px;
+    height: 72px;
+    left: 0px;
+    top: 0px;
+}
 
 .filter-button-text {
     background-color: var(--light-cloud);
@@ -517,8 +526,10 @@ top: 24px;
     position: absolute;
     width: 1128px;
     height: 420px;
-    left: 156px;
     top: 288px;
+    justify-content: space-evenly;
+   
+    
 }
 .project-card {
     border: 1px solid var(--accent-cornflower);
@@ -543,42 +554,47 @@ top: 24px;
 }
 .project-card-four {
     left: 156px;
-    top: 756px;
+    margin-top: 48px;
+    
 } 
 .project-card-five {
     left: 540px;
-    top: 756px;
+    margin-top: 48px;
+    
 }
 .project-card-six {
     left: 924px;
-    top: 756px;
+    margin-top: 48px;
 }
 .project-card-seven {
     left: 156px;
-    top: 1224px;
+    margin-top: 48px;
 }
 .project-card-eight {
     left: 540px;
-    top: 1224px;
+    margin-top: 48px;
 }
 .project-card-nine {
     left: 924px;
-    top: 1224px;
+    margin-top: 48px;
 }
 
 .row-two {
     position: absolute;
     width: 1128px;
     height: 420px;
-    left: 156px;
+    
     top: 756px;
+    margin-top: 48px;
+    
 }
 .row-three {
     position: absolute;
     width: 1128px;
     height: 420px;
-    left: 156px;
+    
     top: 1224px;
+    margin-top: 48px;
 }
 
 .project-header {
@@ -597,6 +613,24 @@ top: 24px;
 
 }
 
+.project-card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 16px;
+    gap: 8px;
+    position: absolute;
+    width: 360px;
+    height: 56px;
+    left: 0px;
+    top: 332px;
+}
+
+.footer-portfolio {
+    margin-top: 120px;
+    top: 1764px;
+}
 
 .list {
     list-style: none;
