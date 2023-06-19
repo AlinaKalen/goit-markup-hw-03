@@ -51,7 +51,7 @@ h1,h2,h3,p {
     margin: 0 auto;
     padding: 0 15px 0 15px;
 }
-.container {
+.container-nav {
     display: flex;
 }
 
@@ -259,18 +259,18 @@ h1,h2,h3,p {
     padding: 32 16 32 16;
 }
 
-.visually-hidden{
+.visually-hidden {
     position: absolute;
-    white-space: nowrap;
     width: 1px;
     height: 1px;
-    overflow: hidden;
+    margin: -1px;
     border: 0;
     padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
+    overflow: hidden;
+  }
 
 .feature-list {
     display: flex;
@@ -279,52 +279,17 @@ h1,h2,h3,p {
     top: 792px;
     gap: 24px;
     
+    
 }
 
-.feature-strategy {
-   
+.feature-componets {
+    width: calc((100% - 72px) / 4);
+    width: 264px;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
     gap: 8px;
-    left: 156px;
-    width: calc((100% - 72px) / 4);
-    position: absolute;
-    
-}
-
-.feature-punctuality {
-    
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;   
-    width: calc((100% - 72px) / 4);
-    left: 444px;
-    position: absolute;
-}
-
-.feature-diligence {
-    
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-    width: calc((100% - 72px) / 4);
-    left: 732px;
-    position: absolute;
-}
-
-
-.feature-techno {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-    width: calc((100% - 72px) / 4);
-    left: 1020px;
-    position: absolute;
+    top: 792px;
 }
 
 .features-heading {
@@ -362,12 +327,16 @@ h1,h2,h3,p {
     left: 559px;
     top: 1016px;
     margin-top: 120px;   
-    margin-bottom: 72px;
+    padding-bottom: 72px;
 }
 
 .list-item {
     display: flex;
     gap: 24px;
+}
+
+.list-item-section{
+    width: calc((100% - 48px) / 3); 
 }
 .section-img-monitor {
     display: flex;
@@ -379,7 +348,6 @@ h1,h2,h3,p {
     left: 156px;
     top: 1128px;
     margin-top: 72px;
-    width: calc((100% - 48px) / 3);
 }
 
 .section-img-phone {
@@ -392,7 +360,6 @@ h1,h2,h3,p {
     left: 540px;
     top: 1128px;
     margin-top: 72px;
-    width: calc((100% - 48px) / 3);
     
 }
 
@@ -406,7 +373,6 @@ h1,h2,h3,p {
     left: 924px;
     top: 1128px;
     padding-top: 72px;
-    width: calc((100% - 48px) / 3);
     
 }
 
@@ -452,27 +418,16 @@ h1,h2,h3,p {
     padding: 0px 0px 32px;
     gap: 32px;
     position: absolute;
-    width: calc((100% - 72px) / 4);
     height: 380px;
     margin-top: 216px;
     
     
 }
 
-.team-card-mark {
-    left: 156px;
-}
-
-.team-card-tom {
-    left: 444px;
-}
-
-.team-card-camila {
-    left: 732px;
-}
-
-.team-card-daniel {
-    left: 1020px;
+.team-card-prop {
+    width: calc((100% - 72px) / 4); 
+    gap: 24px;
+    display: flex;
 }
 
 .team-card-name {
@@ -595,67 +550,6 @@ h1,h2,h3,p {
     height: 420px;
 
     
-}
-
-
-.row-one {
-    position: absolute;
-    width: 1128px;
-    top: 288px;
-}
-
-.project-card-one {
-    left: 156px;
-    margin-top: 72px;
-}
-.project-card-two {
-    left: 540px;
-    margin-top: 72px;
-}
-.project-card-three {
-    left: 924px;
-    margin-top: 72px;
-
-}
-.project-card-four {
-    left: 156px;
-    margin-top: 48px;
-    
-} 
-.project-card-five {
-    left: 540px;
-    margin-top: 48px;
-    
-}
-.project-card-six {
-    left: 924px;
-    margin-top: 48px;
-}
-.project-card-seven {
-    left: 156px;
-    margin-top: 48px;
-}
-.project-card-eight {
-    left: 540px;
-    margin-top: 48px;
-}
-.project-card-nine {
-    left: 924px;
-    margin-top: 48px;
-}
-
-.row-two {
-    position: absolute;
-    width: 1128px;
-    top: 756px;
-    margin-top: 48px;
-    
-}
-.row-three {
-    position: absolute;
-    width: 1128px;
-    top: 1224px;
-    margin-top: 48px;
 }
 
 .project-header {
