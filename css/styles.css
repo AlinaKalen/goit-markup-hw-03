@@ -519,9 +519,9 @@ img {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px; 
-    position: absolute;
+    margin: 0;
     left: 156px;
-    top: 288px;
+    padding-top: 288px;
    
 }
 
@@ -530,6 +530,7 @@ img {
     border: 1px solid var(--accent-cornflower);
     box-sizing: border-box;
     width: calc((100% - 48px) / 3);
+   
   
 
 }
