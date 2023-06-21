@@ -361,7 +361,6 @@ h1,h2,h3,p {
     height: 732px;
     left: 0px;
     top: 1548px;  
-    padding-top: 0;
 }
 
 .team-header {
@@ -375,7 +374,7 @@ h1,h2,h3,p {
     position: absolute;
     height: 40px;
     left: 639px;
-    margin-top: 120px;
+    
     margin-bottom: 72px;
    
 }
@@ -385,18 +384,19 @@ h1,h2,h3,p {
     justify-content: center;
     align-items: center;
     padding: 0px 0px 32px;
-    gap: 32px;
+    gap: 24px;
     position: absolute;
     left: 156px;
-    margin-top: 232px;
+    top: 232px;
 }
 
 .team-card{
+    flex-basis: calc((100% - 72px) / 4));
     color: var(--dark-navy-blue);
     background-color: var(--white-background);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-    width: calc((100% - 72px) / 4); 
+    
 }
 
 .team-card-detail {
@@ -556,6 +556,7 @@ img {
     padding: 32px 16px;
     border-top: none;
     border: 1px solid var(--accent-cornflower);
+    border-top: none;
 }
 
 
