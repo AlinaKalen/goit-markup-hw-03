@@ -23,6 +23,10 @@ body {
     color: var(--text-slate);
 }
 
+img {
+    display: block;
+}
+
 ul {
     padding-left: 0;
 }
@@ -34,12 +38,11 @@ ul {
 .top-line {
     border-bottom: 1px solid var(--accent-cornflower);
     box-sizing: border-box;
-    position: absolute;
-    width: 1440px;
     height: 72px;
     left: 0px;
     top: 0px;
 }
+
 
 .section {
 padding-top: 120px;
@@ -57,6 +60,7 @@ h1,h2,h3,p {
 }
 .container-nav {
     display: flex;
+    justify-content: space-between;
 }
 
 .nav-header {
@@ -72,12 +76,8 @@ h1,h2,h3,p {
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
+    padding: 24px 0;
 
-    position: absolute;
-    width: 261px;
-    height: 24px;
-    left: 347px;
-    top: 24px;
 }
 
 .logo {
@@ -109,9 +109,6 @@ h1,h2,h3,p {
     flex-direction: row;
     align-items: center;
     padding: 0px;
-
-    position: absolute;
-    width: 115px;
     height: 24px;
     left: 156px;
     top: 24px;
@@ -176,29 +173,18 @@ h1,h2,h3,p {
     font-style: normal;
     display: flex;
     gap: 40px;
-    padding: 0;
-    position: absolute;
-    left: 940px;
-    top: 24px;
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
+    padding: 24px 0;
 }
-
-
-
-
 
 .hero-image{
     background-color: var(--dark-navy-blue);
-    position: absolute;
-    height: 600px;
     left: 0px;
     top: 72px;
-    width: 1440px;
     padding: 188px 0 188px;
-    
-   
+    margin-right: 0;
 }
 
 .main-header {
@@ -209,12 +195,10 @@ h1,h2,h3,p {
     letter-spacing: 0.02em;
     text-align: center;
     max-width: 496px;
-    position: absolute;
-    width: 496px;
-    height: 120px;
-    left: 472px;
-    top: 188px; 
-    bottom: 292px;
+    margin-bottom: 48px;
+    margin: 0 auto;
+    padding-bottom: 48px;
+    
 }   
 
 .main-button {
@@ -223,19 +207,12 @@ h1,h2,h3,p {
     padding: 16px 32px;
     color: var(--white-background);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    flex-direction: row;
-    align-items: flex-start;
-    height: 56px;
     gap: 10px;
-    position: absolute;
-    width: 169px;
-    left: 636px;
-    top: 428px;
     border-radius: 4px;
-    display: block; 
+    display: flex; 
     min-width: 169px;
     border: none;
-
+    margin: 0 auto;
 
 }
 .main-button:hover {
@@ -250,9 +227,6 @@ h1,h2,h3,p {
 
 .button-description {
     height: 24px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     letter-spacing: 0.04em;
@@ -264,7 +238,6 @@ h1,h2,h3,p {
 }
 
 .visually-hidden {
-    position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -278,13 +251,8 @@ h1,h2,h3,p {
 
 .feature-list {
     display: flex;
-    position: absolute;
-    top: 792px;
     gap: 24px;
-    margin: 0;
-    width: 1128px;
-    
-    
+    margin: 0; 
 }
 
 .feature-componets {
@@ -293,7 +261,6 @@ h1,h2,h3,p {
     align-items: flex-start;
     padding: 0px;
     gap: 8px;
-    top: 792px;
     margin:0;
     display: flex;
     
@@ -305,20 +272,13 @@ h1,h2,h3,p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark-navy-blue);
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     margin-bottom: 8px; 
 }
 
 .feature-description {
     color: var(--text-slate);
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    
+    letter-spacing: 0.02em; 
 }
 
 .seconadry-header {
@@ -327,11 +287,7 @@ h1,h2,h3,p {
     line-height: 1.11;
     color: var(--dark-navy-blue);
     text-transform: capitalize;
-    text-align: center;
-    position: absolute;
-    width: 323px;
-    left: 559px;
-    top: 1016px;   
+    text-align: center; 
     margin-bottom: 72px;
 }
 
@@ -340,10 +296,7 @@ h1,h2,h3,p {
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    position: absolute;
     margin: 0;
-    left: 156px;
-    top: 1128px;
     gap: 24px;
 }
 
@@ -355,12 +308,7 @@ h1,h2,h3,p {
 
 
 .team-card-section {
-    background-color: var(--light-cloud);
-    position: absolute;
-    width: 1440px;
-    height: 732px;
-    left: 0px;
-    top: 1548px;  
+    background-color: var(--light-cloud); 
 }
 
 .team-header {
@@ -371,10 +319,6 @@ h1,h2,h3,p {
     color: var(--dark-navy-blue);
     letter-spacing: 0.02em; 
     text-align: center;
-    position: absolute;
-    height: 40px;
-    left: 639px;
-    
     margin-bottom: 72px;
    
 }
@@ -385,13 +329,10 @@ h1,h2,h3,p {
     align-items: center;
     padding: 0px 0px 32px;
     gap: 24px;
-    position: absolute;
-    left: 156px;
-    top: 232px;
 }
 
 .team-card{
-    flex-basis: calc((100% - 72px) / 4));
+    flex-basis: calc((100% - 72px) / 4);
     color: var(--dark-navy-blue);
     background-color: var(--white-background);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -406,9 +347,6 @@ h1,h2,h3,p {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 .team-card-name {
@@ -431,30 +369,20 @@ h1,h2,h3,p {
 
 .footer-section {
     background-color: var(--navy-blue-modal-overlay);
-    position: absolute;
-    width: 1440px;
-    height: 312px;
-    left: 0px;
-    top: 2280px;
     padding: 100px 0;
 }
 
 .footer-text {
     color: var(--light-cloud);
     line-height: 1.5;
+    max-width: 264px;
 }
 
-.footer-section-text {
-    position: absolute;
-    width: 264px;
-    left: 156px;   
-}
+    
 
 /* Portfolio*/
 
-img {
-    display: block;
-}
+
 .section-portfolio {
     padding-top: 96px; 
     padding-bottom: 120px;
@@ -469,9 +397,7 @@ img {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     letter-spacing: 0.04em;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+
 }
 
 .filter-button {
@@ -480,13 +406,9 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 116px;
     height: 48px;
     border: 1px solid var(--accent-cornflower);
     border-radius: 4px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
     padding: 12px 24px
 }
 
@@ -506,10 +428,6 @@ img {
     flex-direction: row;
     align-items: flex-start;
     gap: 24px;
-    position: absolute;
-    width: 586px;
-    left: 427px;
-    top: 168px;
     justify-content: center;
     margin-bottom: 72px;
 }
@@ -519,20 +437,11 @@ img {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px; 
-    margin: 0;
-    left: 156px;
-    padding-top: 288px;
-   
+    margin: 0;   
 }
-
-
 .project-card {
-    border: 1px solid var(--accent-cornflower);
     box-sizing: border-box;
     width: calc((100% - 48px) / 3);
-   
-  
-
 }
 
 .project-header {
@@ -565,17 +474,3 @@ img {
     top: 1764px;
 }
 
-
-
-
-
-
-/*ul {
-  padding-left: 0;
-}
-а писав, як у завданні
-.nameclass {
-  width: calc((100% - 72px) / 4);
-}
-
- menu Li class padding-top: 24px та padding-bottom: 24px 
